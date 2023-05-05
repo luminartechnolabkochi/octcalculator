@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4">
+            <div class="mb-3">
+                <!-- # template variable -->
+                <!-- {{}} string interpolation  -->
+                <!-- # temaplte variable  -->
+                <!-- (event) event binding  -->
+                <!-- 2way binding -->
+
+
+                <input type="text" placeholder="enter number 1" #inpt1 >
+
+            </div>
+            <div class="mb-3">
+                <input type="text" placeholder="enter number2" #inpt2>
+
+            </div>
+            <div class="mb-3">
+                <input type="button" value="add" (click)="add(inpt1,inpt2)">
+
+            </div>
+        </div>
+        <div class="col-4"></div>
+        <!-- directives *ngIf *ngFOr -->
+     <div *ngIf="result !=0">
+        <h1>result ={{result}}</h1>
+     </div>
+
+    </div>
+</div>
